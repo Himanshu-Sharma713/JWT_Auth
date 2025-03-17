@@ -1,5 +1,8 @@
 const express = require("express");
 const authRouter = require("./router/authRoute");
+const databaseConnect = require("./config/databaseConfig");
+
+databaseConnect();
 
 const app = express();
 
